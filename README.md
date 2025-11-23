@@ -1,4 +1,4 @@
-# 🌌 N-Body Gravity Simulation
+# N-Body Gravity Simulation
 
 A real-time 3D simulation of gravitational interactions between celestial bodies using **C++** and **OpenGL**. This project implements an $O(N^2)$ N-Body algorithm where every object exerts a gravitational force on every other object, visualizing the results with dynamic lighting and camera controls.
 
