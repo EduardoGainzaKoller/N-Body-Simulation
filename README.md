@@ -58,3 +58,12 @@ You can tweak the simulation stability and realism by modifying the constants at
 const double G = 6.674e-11;  // Gravitational Constant (Real) or 1.0 (Simulation units)
 const double DELTA_TIME = 0.01; // Time step per frame
 ```
+
+## Future Improvements
+
+The current simulation uses basic Euler integration for the physics update. Future improvements are planned to enhance both performance and physical accuracy:
+
+* [ ] Implement **Runge-Kutta 4 (RK4) Integration:** Switching from Euler integration to RK4 will drastically increase the **accuracy** and **stability** of the orbits, ensuring better energy conservation. Although an RK4 step requires four force evaluations (making it computationally heavier per step), its superior stability allows for much larger time steps ($\Delta t$), ultimately speeding up the long-term simulation while maintaining precision.
+* [ ] Optimize physics using the **Barnes-Hut algorithm** ($O(N \log N)$) for large numbers of particles (N > 100).
+* [ ] Implement a trail/orbit line renderer to visualize paths.
+* [ ] Add textures and proper scaling to celestial bodies.
